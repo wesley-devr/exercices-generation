@@ -18,7 +18,6 @@ INSERT INTO funcionarios (cpf,nome,cargo, salario, email) VALUES ("777.777.777.7
 INSERT INTO funcionarios (cpf,nome,cargo, salario, email) VALUES ("666.666.666.66","Manuela", "Gerente de Loja", 3571.45, "manuela@mail.com");
 INSERT INTO funcionarios (cpf,nome,cargo, salario, email) VALUES ("555.555.555.55","Laura", "Assitente Comercial", 2525.17, "laura@mail.com");
 
-SELECT * FROM funcionarios;
 SELECT * FROM funcionarios WHERE salario > 2000;
 SELECT * FROM funcionarios WHERE salario < 2000;
 
