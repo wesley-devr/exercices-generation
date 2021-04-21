@@ -3,11 +3,13 @@ CREATE DATABASE ecommerce;
 USE ecommerce;
 
 CREATE TABLE produtos(
+id int AUTO_INCREMENT,
 nome varchar(50) NOT NULL,
 categoria varchar(50) NOT NULL,
 marca varchar(15) NOT NULL,
 cor varchar(30) NOT NULL,
-preco decimal(13,2)
+preco decimal(13,2),
+PRIMARY KEY (id)
 );
 
 INSERT INTO produtos (nome,categoria, marca,cor,preco) VALUES("galaxy a10","smartphone","samsung","azul",1200);
