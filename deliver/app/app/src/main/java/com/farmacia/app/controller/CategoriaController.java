@@ -36,11 +36,12 @@ public class CategoriaController {
 		return ResponseEntity.status(200).body(repository.findById(id));
 	}
 	
-//	@GetMapping("/descricao")
-//	public ResponseEntity<List<Categoria>> findByDescricaoAndCategoria(@RequestBody String descricao) {
-//		return ResponseEntity.status(200).body(repository.findByDescricaoAndCategoria(descricao));
-//	}
 	
+	  @GetMapping("/descricao") 
+	  public ResponseEntity<List<Categoria>> findByDescricaoAndCategoria(@RequestBody String descricao) {
+	  ResponseEntity.status(200).body(repository.findByDescricaoAndCategoria( descricao));
+	  }
+	 
 	@PostMapping
 	public ResponseEntity<Categoria> postCategoria(@RequestBody Categoria categoria) {
 		return ResponseEntity.status(201).body(repository.save(categoria));

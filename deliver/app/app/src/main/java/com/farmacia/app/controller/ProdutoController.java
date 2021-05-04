@@ -33,10 +33,10 @@ public class ProdutoController {
 		return ResponseEntity.status(200).body(repository.findById(id));
 	}
 	
-//	@GetMapping("/descricao/produtos")
-//	public ResponseEntity<List<Produto>> findByDescricaoAndCategoria(@RequestBody String descricao) {
-//		return ResponseEntity.status(200).body(repository.findByDescricaoAndTitulo(descricao));
-//	}
+	@GetMapping("/descricao/produtos")
+	public ResponseEntity<List<Produto>> findByDescricaoAndCategoria(@RequestBody String descricao) {
+		return ResponseEntity.status(200).body(repository.findByDescricaoAndTitulo(descricao));
+	}
 	
 	@PostMapping("/criar")
 	public ResponseEntity<Produto> postProduto(@RequestBody Produto produto) {
