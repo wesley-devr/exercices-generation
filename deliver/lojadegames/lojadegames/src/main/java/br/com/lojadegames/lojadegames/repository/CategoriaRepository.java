@@ -1,4 +1,4 @@
-package br.com.lojadegames.lojadegames.model.repository;
+package br.com.lojadegames.lojadegames.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

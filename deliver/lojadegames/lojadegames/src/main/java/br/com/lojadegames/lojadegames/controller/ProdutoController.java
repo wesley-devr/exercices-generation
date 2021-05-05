@@ -15,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.lojadegames.lojadegames.model.Produto;
+import br.com.lojadegames.lojadegames.repository.ProdutoRepository;
 import br.com.lojadegames.lojadegames.model.Produto;
-import br.com.lojadegames.lojadegames.model.repository.ProdutoRepository;
-import br.com.lojadegames.lojadegames.model.repository.ProdutoRepository;
 
 @RestController
 @RequestMapping("/produtos")
