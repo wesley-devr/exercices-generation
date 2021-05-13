@@ -23,7 +23,7 @@ import com.blogpessoal.blogPessoal.repository.PostagemRepository;
 import com.blogpessoal.blogPessoal.services.UsuarioService;
 
 @RestController
-@RequestMapping("/postagem")
+@RequestMapping("/postagens")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostagemController {
 
