@@ -6,8 +6,9 @@ public class Cachorro extends Animal{
 		super(nome, idade);
 	} 
 	
+	@Override
 	public void correr() {
-		System.out.println(this.getNome() + " est√° correndo...");
+		return this.getNome() + " est· correndo...";
 	}
 	
 }
